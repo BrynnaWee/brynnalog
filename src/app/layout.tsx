@@ -11,10 +11,11 @@ export const metadata = {
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode // will be a page or nested layout
 }) {
   return (
-    <html lang="en">
+    <html lang="ko">
+      {/* Include shared UI here e.g. a header or sidebar */}
       <body className={inter.className}>{children}</body>
     </html>
   )
