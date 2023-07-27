@@ -6,6 +6,7 @@ const debug = process.env.NODE_ENV !== "production";
 const repository = "brynnalog";
 
 const nextConfig = {
+    output: 'export',
     basePath: `/${repository}`,
     reactStrictMode: true,
     assetPrefix: !debug ? `/${repository}/` : "",
