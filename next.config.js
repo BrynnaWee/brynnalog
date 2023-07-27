@@ -7,7 +7,7 @@ const repository = "brynnalog";
 
 const nextConfig = {
     output: 'export',
-    basePath: `/${repository}`,
+    // basePath: `/${repository}`,
     reactStrictMode: true,
     // assetPrefix: !debug ? `/${repository}/` : "",
     trailingSlash: true
