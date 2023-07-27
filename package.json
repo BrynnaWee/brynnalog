@@ -1,12 +1,14 @@
 {
   "name": "brynnalog",
+  "url": "https://brynnawee.github.io/brynnalog",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev -p 7078",
     "build": "next build",
     "start": "export PORT=7389 && next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "next build && next export && touch out/.nojekyll && git add -f out/ && git commit -m 'deploy to gh-pages' && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@types/node": "20.4.0",
@@ -20,5 +22,8 @@
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.7",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
