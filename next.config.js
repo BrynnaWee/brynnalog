@@ -9,7 +9,7 @@ const nextConfig = {
     output: 'export',
     // basePath: `/${repository}`,
     reactStrictMode: true,
-    // assetPrefix: !debug ? `/${repository}/` : "",
+    assetPrefix: !debug ? `/${repository}/` : "",
     trailingSlash: true
 }
 
